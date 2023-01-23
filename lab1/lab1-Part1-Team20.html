@@ -1,77 +1,96 @@
 <!DOCTYPE html>
+
 <html>
 
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Electronics-Center</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="lab1-Part1-Team20.css">
 </head>
 
 <body>
-    <div id="title">Electronics-Center</div>
-    <label>Input:
-</body>
-<input type="text"></input>
-<select name="action" id="action">
-    <option value="0">Archive</option>
-    <option value="1">Edit</option>
-    <option value="2">Delete</option>
-    <option value="3">Collection</option>
-</select>
-<select name="type" id="type">
-    <option value="0">LapTop</option>
-    <option value="1">NoteBook</option>
-    <option value="2">Tablet</option>
-    <option value="3">Cellphone</option>
-</select>
-<table>
-    <tr>
-        <th>Image</th>
-        <th>Name</th>
-        <th>Company</th>
-        <th>Year</th>
-        <th>Type</th>
-        <th>Actions</th>
-    </tr>
-    <tr>
-        <td>img</td>
-        <td>iPhone</td>
-        <td>Apple</td>
-        <td>2023</td>
-        <td>Cellphone</td>
-        <td>
-            <button>Archive</button>
-            <button>Edit</button>
-            <button>Delete</button>
-            <button>Collections</button>
-        </td>
-    </tr>
-    <tr>
-        <td>img</td>
-        <td>iPad</td>
-        <td>Apple</td>
-        <td>2020</td>
-        <td>Tablet</td>
-        <td>
-            <button>Archive</button>
-            <button>Edit</button>
-            <button>Delete</button>
-            <button>Collections</button>
-        </td>
-    </tr>
-    <tr>
-        <td>img</td>
-        <td>XPS 15</td>
-        <td>Dell</td>
-        <td>2018</td>
-        <td>Laptop</td>
-        <td>
-            <button>Archive</button>
-            <button>Edit</button>
-            <button>Delete</button>
-            <button>Collections</button>
-        </td>
-    </tr>
-</table>
+    <h1 id="title">Electronics-Center</h1>
+
+    <form>
+        <label>Input:</label>
+        <input type="text"></input>
+
+        <label>Type:</label>
+        <select name="action" id="action">
+            <option value="" disabled selected hidden>Select type</option>
+            <option value="0">Archive</option>
+            <option value="1">Edit</option>
+            <option value="2">Delete</option>
+            <option value="3">Collection</option>
+        </select>
+
+        <label>Action:</label>
+        <select name="type" id="type">
+            <option value="" disabled selected hidden>Select action</option>
+            <option value="0">LapTop</option>
+            <option value="1">NoteBook</option>
+            <option value="2">Tablet</option>
+            <option value="3">CellPhone</option>
+        </select>
+    </form>
+
+    <table>
+        <tr>
+            <th>Image</th>
+            <th>Name</th>
+            <th>Company</th>
+            <th>Year</th>
+            <th>Type</th>
+            <th>Actions</th>
+        </tr>
+        <tr>
+            <td><input type="radio" name="images">img</input></td>
+            <td>iPhone</td>
+            <td>Apple</td>
+            <td>2023</td>
+            <td>Cellphone</td>
+            <td>
+                <button>Archive</button>
+                <button>Edit</button>
+                <button>Delete</button>
+                <button>Collections</button>
+            </td>
+        </tr>
+        <tr>
+            <td><input type="radio" name="images">img</input></td>
+            <td>iPad</td>
+            <td>Apple</td>
+            <td>2020</td>
+            <td>Tablet</td>
+            <td>
+                <button>Archive</button>
+                <button>Edit</button>
+                <button>Delete</button>
+                <button>Collections</button>
+            </td>
+        </tr>
+        <tr>
+            <td><input type="radio" name="images">img</input></td>
+            <td>XPS 15</td>
+            <td>Dell</td>
+            <td>2018</td>
+            <td>Laptop</td>
+            <td>
+                <button>Archive</button>
+                <button>Edit</button>
+                <button>Delete</button>
+                <button>Collections</button>
+            </td>
+        </tr>
+    </table>
+
 </body>
 
 </html>
