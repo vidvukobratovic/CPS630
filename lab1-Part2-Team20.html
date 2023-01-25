@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electronics-Center</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="lab1-Part1-Team20.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $(".btn1").click(function () {
+                $("#iphone").fadeOut();
+            });
+            $(".btn2").click(function () {
+                $("#iphone").fadeIn();
+            });
+            $(".btn3").click(function () {
+                $("#ipad").fadeOut();
+            });
+            $(".btn4").click(function () {
+                $("#ipad").fadeIn();
+            });
+            $(".btn5").click(function () {
+                $("#laptop").fadeOut();
+            });
+            $(".btn6").click(function () {
+                $("#laptop").fadeIn();
+            });
+        });
+
+        $(document).ready(function () {
+            $(".animation").click(function () {
+                var div = $("#title");
+                div.animate({ left: '100px' }, "slow");
+                div.animate({ fontSize: '3em' }, "slow");
+                div.animate({ left: '-1px' }, "slow");
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+
+    <div id="title">Electronics Centre</div>
+    <button class="animation">Start Animation</button>
+
+    <form class="top-form">
+        <div class="row">
+            <label for="input">Input:</label>
+            <input type="text"></input>
+        </div>
+
+        <div class="row">
+            <label for="action">Action:</label>
+            <select id="action" name="action">
+                <option value="" disabled selected hidden>Select action</option>
+                <option value="0">Archive</option>
+                <option value="1">Edit</option>
+                <option value="2">Delete</option>
+                <option value="3">Collection</option>
+            </select>
+
+            <label for="type">Type:</label>
+            <select id="type" name="type">
+                <option value="" disabled selected hidden>Select type</option>
+                <option value="0">Laptop</option>
+                <option value="1">Notebook</option>
+                <option value="2">Tablet</option>
+                <option value="3">Cellphone</option>
+            </select>
+        </div>
+    </form>
+
+    <table>
+        <tr>
+            <th>Select</th>
+            <th>Image</th>
+            <th>Name</th>
+            <th>Company</th>
+            <th>Year</th>
+            <th>Type</th>
+            <th>Actions</th>
+        </tr>
+        <tr>
+            <td class="select">
+                <form>
+                    <input type="radio" id="Fade out" name="iphone" class="btn1">
+                    <label for="Fade out">Fade out</label><br>
+                    <input type="radio" id="Fade in" name="iphone" class="btn2">
+                    <label for="Fade in">Fade in</label><br>
+                </form>
+            </td>
+            <td>
+                <img id="iphone"
+                    src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-card-40-iphone14pro-202209_FMT_WHH?wid=508&hei=472&fmt=p-jpg&qlt=95&.v=1663611329204"
+                    alt="iphone">
+            </td>
+            <td>iPhone</td>
+            <td>Apple</td>
+            <td>2023</td>
+            <td>Cellphone</td>
+            <td>
+                <button>Archive</button>
+                <button>Edit</button>
+                <button>Delete</button>
+                <button>Collection</button>
+            </td>
+        </tr>
+        <tr>
+            <td class="select">
+                <form>
+                    <input type="radio" id="Fade out" name="iphone" class="btn3">
+                    <label for="Fade out">Fade out</label><br>
+                    <input type="radio" id="Fade in" name="iphone" class="btn4">
+                    <label for="Fade in">Fade in</label><br>
+                </form>
+            </td>
+            <td>
+                <img id="ipad"
+                    src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/ipad-2022-hero-silver-wifi-select_FMT_WHH?wid=940&hei=1112&fmt=png-alpha&.v=1664387253605"
+                    alt="ipad">
+            </td>
+            <td>iPad</td>
+            <td>Apple</td>
+            <td>2020</td>
+            <td>Tablet</td>
+            <td>
+                <button>Archive</button>
+                <button>Edit</button>
+                <button>Delete</button>
+                <button>Collection</button>
+            </td>
+        </tr>
+        <tr>
+            <td class="select">
+                <form>
+                    <input type="radio" id="Fade out" name="iphone" class="btn5">
+                    <label for="Fade out">Fade out</label><br>
+                    <input type="radio" id="Fade in" name="iphone" class="btn6">
+                    <label for="Fade in">Fade in</label><br>
+                </form>
+            </td>
+            <td>
+                <img id="laptop"
+                    src="https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/xps-notebooks/xps-15-9520/spi/black/ng/notebook-xps-15-9520-black-campaign-hero-504x350-ng.psd?fmt=jpg&wid=570&hei=400"
+                    alt="laptop">
+            </td>
+            <td>XPS 15</td>
+            <td>Dell</td>
+            <td>2018</td>
+            <td>Laptop</td>
+            <td>
+                <button>Archive</button>
+                <button>Edit</button>
+                <button>Delete</button>
+                <button>Collection</button>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>

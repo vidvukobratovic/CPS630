@@ -7,71 +7,98 @@
 </head>
 
 <body>
-    <div id="title">Electronics-Center</div>
-    <label>Input:
-</body>
-<input type="text"></input>
-<select name="action" id="action">
-    <option value="0">Archive</option>
-    <option value="1">Edit</option>
-    <option value="2">Delete</option>
-    <option value="3">Collection</option>
-</select>
-<select name="type" id="type">
-    <option value="0">LapTop</option>
-    <option value="1">NoteBook</option>
-    <option value="2">Tablet</option>
-    <option value="3">Cellphone</option>
-</select>
-<table>
-    <tr>
-        <th>Image</th>
-        <th>Name</th>
-        <th>Company</th>
-        <th>Year</th>
-        <th>Type</th>
-        <th>Actions</th>
-    </tr>
-    <tr>
-        <td>img</td>
-        <td>iPhone</td>
-        <td>Apple</td>
-        <td>2023</td>
-        <td>Cellphone</td>
-        <td>
-            <button>Archive</button>
-            <button>Edit</button>
-            <button>Delete</button>
-            <button>Collections</button>
-        </td>
-    </tr>
-    <tr>
-        <td>img</td>
-        <td>iPad</td>
-        <td>Apple</td>
-        <td>2020</td>
-        <td>Tablet</td>
-        <td>
-            <button>Archive</button>
-            <button>Edit</button>
-            <button>Delete</button>
-            <button>Collections</button>
-        </td>
-    </tr>
-    <tr>
-        <td>img</td>
-        <td>XPS 15</td>
-        <td>Dell</td>
-        <td>2018</td>
-        <td>Laptop</td>
-        <td>
-            <button>Archive</button>
-            <button>Edit</button>
-            <button>Delete</button>
-            <button>Collections</button>
-        </td>
-    </tr>
-</table>
+    <div id="title2">Electronics-Center</div><br><br>
+    <div id="input">
+        <label>Input:
+            <input type="text"></input>
+            <select name="action" id="action">
+                <option value="0">Archive</option>
+                <option value="1">Edit</option>
+                <option value="2">Delete</option>
+                <option value="3">Collection</option>
+            </select>
+            <select name="type" id="type">
+                <option value="0">LapTop</option>
+                <option value="1">NoteBook</option>
+                <option value="2">Tablet</option>
+                <option value="3">Cellphone</option>
+            </select>
+    </div>
+
+    <table>
+        <tr>
+            <th>Select</th>
+            <th>Image</th>
+            <th>Name</th>
+            <th>Company</th>
+            <th>Year</th>
+            <th>Type</th>
+            <th>Actions</th>
+        </tr>
+        <tr>
+            <td class="select">
+                <form>
+                    <input type="radio" id="button" name="button" class="btn1">
+                    <label for="button">Radio Button</label><br>
+                </form>
+            </td>
+            <td> <img id="iphone"
+                    src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-card-40-iphone14pro-202209_FMT_WHH?wid=508&hei=472&fmt=p-jpg&qlt=95&.v=1663611329204"
+                    alt="iphone"></td>
+            <td>iPhone</td>
+            <td>Apple</td>
+            <td>2023</td>
+            <td>Cellphone</td>
+            <td>
+                <button>Archive</button>
+                <button>Edit</button>
+                <button>Delete</button>
+                <button>Collections</button>
+            </td>
+        </tr>
+        <tr>
+            <td class="select">
+                <form>
+                    <input type="radio" id="button" name="button" class="btn2">
+                    <label for="button">Radio Button</label><br>
+                </form>
+            </td>
+            <td> <img id="ipad"
+                    src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/ipad-2022-hero-silver-wifi-select_FMT_WHH?wid=940&hei=1112&fmt=png-alpha&.v=1664387253605"
+                    alt="ipad"></td>
+            <td>iPad</td>
+            <td>Apple</td>
+            <td>2020</td>
+            <td>Tablet</td>
+            <td>
+                <button>Archive</button>
+                <button>Edit</button>
+                <button>Delete</button>
+                <button>Collections</button>
+            </td>
+        </tr>
+        <tr>
+            <td class="select">
+                <form>
+                    <input type="radio" id="button" name="button" class="btn2">
+                    <label for="button">Radio Button</label><br>
+                </form>
+            </td>
+            <td> <img id="laptop"
+                    src="https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/xps-notebooks/xps-15-9520/spi/black/ng/notebook-xps-15-9520-black-campaign-hero-504x350-ng.psd?fmt=jpg&wid=570&hei=400"
+                    alt="laptop"></td>
+            <td>XPS 15</td>
+            <td>Dell</td>
+            <td>2018</td>
+            <td>Laptop</td>
+            <td>
+                <button>Archive</button>
+                <button>Edit</button>
+                <button>Delete</button>
+                <button>Collections</button>
+            </td>
+        </tr>
+    </table>
 </body>
 
 </html>
