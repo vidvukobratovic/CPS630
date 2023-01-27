@@ -62,7 +62,7 @@ table {
     background-color: #FFF;
     text-align: center;
     margin: 2rem auto;
-    width: 70%;
+    width: 80%;
 }
 
 th,
@@ -72,10 +72,19 @@ td {
 }
 
 .select {
-    width: 15%;
+    width: 20%;
+    text-align: left;
 }
 
 img {
     width: 70%;
-    height: 70%;
+    height: auto;
+}
+
+.actions {
+    width: 30%;
+}
+
+.actions button {
+    display: inline-block;
 }

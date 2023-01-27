@@ -2,28 +2,48 @@
 <html>
 
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Electronics-Center</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="lab1-Part1-Team20.css">
 </head>
 
 <body>
     <div id="title2">Electronics-Center</div><br><br>
-    <div id="input">
-        <label>Input:
+
+    <form class="top-form">
+        <div class="row">
+            <label for="input">Input:</label>
             <input type="text"></input>
-            <select name="action" id="action">
+        </div>
+
+        <div class="row">
+            <label for="action">Action:</label>
+            <select id="action" name="action">
+                <option value="" disabled selected hidden>Select action</option>
                 <option value="0">Archive</option>
                 <option value="1">Edit</option>
                 <option value="2">Delete</option>
                 <option value="3">Collection</option>
             </select>
-            <select name="type" id="type">
-                <option value="0">LapTop</option>
-                <option value="1">NoteBook</option>
+
+            <label for="type">Type:</label>
+            <select id="type" name="type">
+                <option value="" disabled selected hidden>Select type</option>
+                <option value="0">Laptop</option>
+                <option value="1">Notebook</option>
                 <option value="2">Tablet</option>
                 <option value="3">Cellphone</option>
             </select>
-    </div>
+        </div>
+    </form>
 
     <table>
         <tr>
@@ -49,11 +69,11 @@
             <td>Apple</td>
             <td>2023</td>
             <td>Cellphone</td>
-            <td>
+            <td class="actions">
                 <button>Archive</button>
                 <button>Edit</button>
                 <button>Delete</button>
-                <button>Collections</button>
+                <button>Collection</button>
             </td>
         </tr>
         <tr>
@@ -70,11 +90,11 @@
             <td>Apple</td>
             <td>2020</td>
             <td>Tablet</td>
-            <td>
+            <td class="actions">
                 <button>Archive</button>
                 <button>Edit</button>
                 <button>Delete</button>
-                <button>Collections</button>
+                <button>Collection</button>
             </td>
         </tr>
         <tr>
@@ -91,11 +111,11 @@
             <td>Dell</td>
             <td>2018</td>
             <td>Laptop</td>
-            <td>
+            <td class="actions">
                 <button>Archive</button>
                 <button>Edit</button>
                 <button>Delete</button>
-                <button>Collections</button>
+                <button>Collection</button>
             </td>
         </tr>
     </table>
