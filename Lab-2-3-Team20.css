@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    background-color: #f1f5f9;
+    font-size: 13px;
+    margin: auto;
+    padding: 2rem 0;
+    width: 80%;
+}
+
+h1 {
+    font-family: 'Libre Baskerville', serif;
+}
+
+.description {
+    color: gray;
+    font-family: 'Libre Baskerville', serif;
+}
+
+form {
+    background-color: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 5%;
+    /* margin: 1rem auto; */
+}
+
+.card {
+    border-radius: 10px;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+form .inputs {
+    margin: 1rem 0;
+    width: 50%;
+}
+
+label {
+    display: block;
+    font-family: 'Lato', sans-serif;
+    margin: 1rem 0 0.5rem;
+}
+
+select, input {
+    border: 0.5px solid lightgray;
+    border-radius: 3px;
+    height: 2.5rem;
+    width: 100%;
+}
+
+select {
+    padding: 0.5rem;
+}
+
+input {
+    padding: 0 0.7rem;
+}
+
+input[type=file] {
+    height: auto;
+    padding: 0.5rem;
+}
+
+form .buttons {
+    width: 20%;
+}
+
+button {
+    border: none;
+    background-color: #1DA1F2;
+    border-radius: 2px;
+    color: #FFF;
+    cursor: pointer;
+    display: block;
+    height: 2rem;
+    margin: 2rem auto;
+    width: 60%;
+}
+
+.records {
+    background-color: #FFF;
+    margin: auto;
+}
+
+
+
+img {
+    width: 10rem;
+    height: auto;
+}
+
+table {
+    border-collapse: collapse;
+    margin: auto;
+}
+
+tr:first-child {
+    border-bottom: 1px solid lightgray;
+}
+
+th,
+td {
+    font-family: 'Libre Baskerville', serif;
+    text-align: center;
+    padding: 1rem;
+}
+
